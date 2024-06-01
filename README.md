@@ -127,6 +127,6 @@ We welcome contributions from the community. To contribute, please fork the repo
 
 For questions or support, please contact Deval Darji by following ways:
 
-1. [E-mail](mailto:deval135darji@gmail.com)
+1. LinkedIn: [Deval Darji](https://www.linkedin.com/in/deval-darji-a15002226/)
 
-2. [LinkedIn](https://www.linkedin.com/in/deval-darji-a15002226/)
+2. Email: [deval135darji@gmail.com](mailto:deval135darji@gmail.com)
