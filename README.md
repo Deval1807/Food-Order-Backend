@@ -123,7 +123,7 @@ To deploy the application, follow these steps:
 We welcome contributions from the community. To contribute, please fork the repository, create a new branch, and submit a pull request. Make sure to follow the coding standards and ethical practices. 
 
 
-## Contatct
+## Contact
 
 For questions or support, please contact Deval Darji by following ways:
 
