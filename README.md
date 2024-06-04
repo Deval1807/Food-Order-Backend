@@ -11,9 +11,10 @@ This project is a comprehensive backend for an online food order-delivery applic
 3. [Usage](#usage)
 4. [API Documentation](#api-documentation)
 5. [Configuration](#configuration)
-6. [Deployment](#deployment)
-7. [Contribution](#contribution)
-8. [Contact](#contact)
+6. [Build](#build)
+7. [Deployment](#deployment)
+8. [Contribution](#contribution)
+9. [Contact](#contact)
 
 ## Features
 
@@ -80,9 +81,11 @@ This project is built using Node.js, Express, and TypeScript. To get started, fo
 
 Once the server is running, you can access the API endpoints using a tool like Postman or via your frontend application. The API documentation provides detailed information on each endpoint, including the request and response formats.
 
+
 ## API Documentation
 
-For detailed API documentation, please visit [API Documentation](#)
+For detailed API documentation, please visit [API Documentation](https://documenter.getpostman.com/view/33324941/2sA3Qy5pAF)
+
 
 ## Configuration
 
@@ -100,7 +103,8 @@ TWILIO_AUTH_TOKEN = <your-twilio-auth-token>
 TWILIO_PHONE_NUMBER = <your-twilio-phone-number>
 ```
 
-## Deployement
+
+## Build
 
 To deploy the application, follow these steps:
 
@@ -116,6 +120,11 @@ To deploy the application, follow these steps:
     ```bash
     npm start
     ```
+
+
+## Deployment
+
+The Deployed Project link: [Deployed Backend](https://food-order-backend-w6bv.onrender.com)
 
 
 ## Contribution
