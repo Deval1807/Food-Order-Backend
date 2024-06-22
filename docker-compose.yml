@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  food-order-backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: food-order-backend
+    env_file:
+      - .env
+    container_name: Food-order-backend
+    ports:
+      - 8000:8000
