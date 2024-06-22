@@ -7,7 +7,10 @@ This project is a comprehensive backend for an online food order-delivery applic
 ## Table of Contents
 
 1. [Features](#features)
-2. [Installation](#installation)
+2. [Technologies Used](#technologies-used)
+2. [Getiing Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 3. [Usage](#usage)
 4. [API Documentation](#api-documentation)
 5. [Configuration](#configuration)
@@ -57,25 +60,69 @@ This project is a comprehensive backend for an online food order-delivery applic
 - Change Status
 
 
-## Installation
+## Technologies Used
 
-This project is built using Node.js, Express, and TypeScript. To get started, follow these steps:
+- Node.js: As the Runtime for the Project
+- Express.js: Frameword to create web-applications
+- Typescript: For enhanced code quality and development experience
+- MongoDB: As a NoSQL Database
+- Docker: For Containerizing the application
+- Multer: Middleware for handling  multipart/form-data, for uploading files
+- Twilio: For sending OTP for customer verification
+- Render: For Deploying the application
 
-1. Clone the repository:
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js installed
+- Docker installed (if want to start through docker image)
+- MongoDB database
+- Twilio Account
+
+
+### Installation
+
+- For the installaion, please follow the following steps
+
+- Clone the repository:
     ```bash
     git clone https://github.com/Deval1807/Food-Order-Backend
     cd Food-Order-Backend
     ```
 
-2. Install the dependencies:
-    ```bash
-    npm install
-    ```
+- You can get started with the project in 2 ways. By simply starting the proj by installing dependencies and by Docker image.
 
-3. Start the project in development:
-    ```bash
-    npm run dev
-    ```
+1. Simple installation: 
+
+    1. Install the dependencies:
+        ```bash
+        npm install
+        ```
+
+    2. Set up the [.env configuration](#configuration)
+
+    3. Start the project in development:
+        ```bash
+        npm run dev
+        ```
+
+2. Through Docker:
+
+    1. Make sure the Docker service is running
+
+    2. Set up the [.env configuration](#configuration)
+
+    3. Build the image
+        ```
+        docker-compose build
+        ```
+    
+    4. Run the image
+        ```
+        docker-compose up
+        ```
 
 ## Usage
 
@@ -92,15 +139,12 @@ For detailed API documentation, please visit [API Documentation](https://documen
 Ensure you have the following environment variables set up in your `.env` file:
 
 ```plaintext
-PORT = <your-port>
-
-MONGO_URI = <your-URI>
-
-APP_SECRET = <your-secret-key>
-
-TWILIO_SID = <your-twilio-sid>
-TWILIO_AUTH_TOKEN = <your-twilio-auth-token>
-TWILIO_PHONE_NUMBER = <your-twilio-phone-number>
+PORT=<your-port>
+MONGO_URI=<your-URI>
+APP_SECRET=<your-secret-key>
+TWILIO_SID=<your-twilio-sid>
+TWILIO_AUTH_TOKEN=<your-twilio-auth-token>
+TWILIO_PHONE_NUMBER=<your-twilio-phone-number>
 ```
 
 
@@ -109,9 +153,6 @@ TWILIO_PHONE_NUMBER = <your-twilio-phone-number>
 To deploy the application, follow these steps:
 
 1. Build the project
-    - If you have executed ```npm install```, It will also build your project.
-    - You can find the build int 'dist' directory
-    - If you want to build your project again, execute
     ```bash
     npm run build
     ```
