@@ -8,16 +8,16 @@ This project is a comprehensive backend for an online food order-delivery applic
 
 1. [Features](#features)
 2. [Technologies Used](#technologies-used)
-2. [Getiing Started](#getting-started)
+3. [Getiing Started](#getting-started)
     - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-3. [Usage](#usage)
+    - [Cloning](#cloning)
+    - [Configuration](#configuration)
+    - [Starting the Project](#starting-the-project)
+    - [Usage](#usage)
 4. [API Documentation](#api-documentation)
-5. [Configuration](#configuration)
-6. [Build](#build)
-7. [Deployment](#deployment)
-8. [Contribution](#contribution)
-9. [Contact](#contact)
+5. [Deployment](#deployment)
+6. [Contribution](#contribution)
+7. [Contact](#contact)
 
 ## Features
 
@@ -70,59 +70,17 @@ This project is a comprehensive backend for an online food order-delivery applic
 - Twilio Account
 
 
-### Installation
+### Cloning
 
-- For the installaion, please follow the following steps
+Clone the Repository
 
-- Clone the repository:
-    ```bash
-    git clone https://github.com/Deval1807/Food-Order-Backend
-    cd Food-Order-Backend
-    ```
-
-- You can get started with the project in 2 ways. By simply starting the proj by installing dependencies and by Docker image.
-
-1. Simple installation: 
-
-    1. Install the dependencies:
-        ```bash
-        npm install
-        ```
-
-    2. Set up the [.env configuration](#configuration)
-
-    3. Start the project in development:
-        ```bash
-        npm run dev
-        ```
-
-2. Through Docker:
-
-    1. Make sure the Docker service is running
-
-    2. Set up the [.env configuration](#configuration)
-
-    3. Build the image
-        ```
-        docker-compose build
-        ```
-    
-    4. Run the image
-        ```
-        docker-compose up
-        ```
-
-## Usage
-
-Once the server is running, you can access the API endpoints using a tool like Postman or via your frontend application. The API documentation provides detailed information on each endpoint, including the request and response formats.
+```bash
+git clone https://github.com/Deval1807/Food-Order-Backend
+cd Food-Order-Backend
+```
 
 
-## API Documentation
-
-For detailed API documentation, please visit [API Documentation](https://documenter.getpostman.com/view/33324941/2sA3Qy5pAF)
-
-
-## Configuration
+### Configuration
 
 Ensure you have the following environment variables set up in your `.env` file:
 
@@ -136,19 +94,55 @@ TWILIO_PHONE_NUMBER=<your-twilio-phone-number>
 ```
 
 
-## Build
+### Starting the Project
 
-To deploy the application, follow these steps:
+- You can get started with the project in 2 ways. By simply starting the proj by installing dependencies and by Docker image.
 
-1. Build the project
-    ```bash
-    npm run build
-    ```
+1. Through Docker:
 
-2. Start the built project
-    ```bash
-    npm start
-    ```
+    - Make sure you have your Docker service running
+    - Make sure you have set up the `.env` files (see [Configuration](#configuration))
+    - Build the image
+        ```
+        docker-compose build
+        ```
+    - Run the image
+        ```
+        docker-compose up
+        ```
+
+2. Simple installation: 
+
+    - Install the dependencies:
+        ```bash
+        npm install
+        ```
+    - Make sure you have set up the `.env` files (see [Configuration](#configuration))
+    - Starting the Service
+        - Development Mode
+            ```bash
+            npm run dev
+            ```
+        - Production
+            - First build the project
+            ```bash
+            npm run build
+            ```
+            - Start the server
+            ```bash
+            npm start
+            ```
+
+
+### Usage
+
+Once the server is running, you can access the API endpoints using a tool like Postman or via your frontend application. The API documentation provides detailed information on each endpoint, including the request and response formats.
+
+
+## API Documentation
+
+For detailed API documentation, please visit [API Documentation](https://documenter.getpostman.com/view/33324941/2sA3Qy5pAF)
+
 
 
 ## Deployment
