@@ -22,42 +22,30 @@ This project is a comprehensive backend for an online food order-delivery applic
 ## Features
 
 ### Admin
-- Create Vendor
-- Get Vendors 
+- Create/Get Vendor/s
 - Get Transactions
-- Get Delivery Users
-- Verify Delivery Users
+- Get/Verify Delivery Users
 
 ### Vendor
-- Register
-- Login
+- Register/Login
 - Update Profile, images, service availability
 - Add and Get Foods
 - Get Orders and process them
 - Add Offers, and edit them
 
 ### Shopping
-- Get Food Availability
-- Get Top Restaurants
-- Get Offers
-- Search Foods
-- Get Food Under 30 Minutes
+- Get Food Availability, Top Restaurants and offers
+- Search Foods and food under 30 minutes
 
 ### Customer
-- Register
-- Login
-- OTP Verification
-- Update Profile
-- Add to Cart, Get and delete Cart
-- Apply Offer
-- Place Order
-- Get Orders
+- Register/Login
+- Update Profile, get verified by OTP verification
+- Apply Offer, Add to Cart and Delete from Cart
+- Place Order and Get Orders
 
 ### Delivery User
-- Register
-- Login
-- Update Profile
-- Change Status
+- Register/Login
+- Update Profile and Change status
 
 
 ## Technologies Used
